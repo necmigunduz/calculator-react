@@ -9,7 +9,7 @@ export default function Button(props) {
       <button
         className="name"
         type="button"
-        onClick={handleClick.bind(this, name)}
+        onClick={handleClick}
       >
         {name}
       </button>
