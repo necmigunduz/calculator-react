@@ -14,7 +14,7 @@ export default function ButtonPannel() {
         <Button className="7" />
         <Button className="8" />
         <Button className="9" />
-        <Button className="x" />
+        <Button className="*" />
       </div>
       <div className="buttons">
         <Button className="4" />
