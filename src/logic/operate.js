@@ -1,26 +1,26 @@
 import Big from 'big.js';
 
 export default function operate(previous, next, operation) {
-    const previous = Big(previous);
-    const next = Big(next);
+  const prev = Big(previous);
+  const nxt = Big(next);
 
-    let value;
+  let value;
 
-    if (operation === '+') {
-        value = previous.plus(next);
-    }
+  if (operation === '+') {
+    value = prev.plus(nxt);
+  }
 
-    if (operation === '-') {
-        value = previous.minus(next);
-    }
+  if (operation === '-') {
+    value = prev.minus(nxt);
+  }
 
-    if (operation === '/') {
-        value = previous.div(next);
-    }
+  if (operation === '/') {
+    value = prev.div(nxt);
+  }
 
-    if (operation) {
-        value = previous.mod(next)
-    }
+  if (operation) {
+    value = prev.mod(nxt);
+  }
 
-    return value.toString()
+  return value.toString();
 }
