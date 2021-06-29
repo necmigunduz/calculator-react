@@ -25,7 +25,7 @@ To get a local copy up and running follow these simple example steps.
 
 - LinkedIn: [Necmi Gunduz](https://www.linkedin.com/in/necmigunduz/)
 - Github: [@necmigunduz](https://github.com/necmigunduz/)
-- Twitter: [@necmigunduz](https://twitter.com/necm_gun)
+- Twitter: [@necm_gun](https://twitter.com/necm_gun)
 - Mail: [necmigunduz@gmail.com](necmigunduz@gmail.com)
 
 
