@@ -17,7 +17,6 @@ export default function calculate(data, buttonName) {
       if (next) {
         total = operate(total, next, operation);
         next = null;
-        total = null;
       }
       break;
     case '+/-':
