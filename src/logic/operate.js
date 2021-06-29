@@ -12,7 +12,7 @@ export default function operate(previous, next, operation) {
     case '-':
       value = prev.minus(nxt);
       break;
-    case 'X':
+    case '*':
       value = prev.times(nxt);
       break;
     case '%':
@@ -27,5 +27,5 @@ export default function operate(previous, next, operation) {
     default:
       value = 0;
   }
-  return value.toString;
+  return value.toString();
 }

@@ -7,8 +7,6 @@ export default function calculate(data, buttonName) {
       if (next) {
         total = operate(total, next, operation);
         total = operate(total, '100', '/');
-        next = null;
-        total = null;
       } else {
         total = operate(total, '100', '/');
       }
@@ -16,7 +14,8 @@ export default function calculate(data, buttonName) {
     case '=':
       if (next) {
         total = operate(total, next, operation);
-        next = null;
+        next = '';
+        operation = '';
       }
       break;
     case '+/-':
@@ -27,13 +26,9 @@ export default function calculate(data, buttonName) {
       }
       break;
     case 'AC':
-      if (next) {
-        next = '0';
-      } else if (operation) {
-        operation = null;
-      } else {
-        total = '0';
-      }
+      total = '0';
+      next = '';
+      operation = '';
       break;
     case '.':
       if (next) {
@@ -46,7 +41,6 @@ export default function calculate(data, buttonName) {
         total += '.';
       }
       break;
-
     case '1':
     case '2':
     case '3':
@@ -67,10 +61,22 @@ export default function calculate(data, buttonName) {
         total += buttonName;
       }
       break;
+    case '+':
+    case '-':
+    case '/':
+    case '*':
+      if (operation && next) {
+        total = operate(total, next, operation);
+        next = '';
+        operation = buttonName;
+      } else {
+        operation = buttonName;
+      }
+      break;
     default:
-      total = operate(total, next, operation);
-      next = null;
-      operation = buttonName;
+      total = '0';
+      next = '';
+      operation = '';
       break;
   }
   return { total, next, operation };

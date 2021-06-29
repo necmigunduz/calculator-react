@@ -40,7 +40,7 @@ function ButtonPanel(props) {
 }
 
 ButtonPanel.propTypes = {
-  clickHandler: PropTypes.isRequired,
+  clickHandler: PropTypes.func.isRequired,
 };
 
 export default ButtonPanel;
