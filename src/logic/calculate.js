@@ -7,6 +7,8 @@ export default function calculate(data, buttonName) {
       if (next) {
         total = operate(total, next, operation);
         total = operate(total, '100', '/');
+        next = '';
+        operation = '';
       } else {
         total = operate(total, '100', '/');
       }
@@ -15,7 +17,7 @@ export default function calculate(data, buttonName) {
       if (next) {
         total = operate(total, next, operation);
         next = '';
-        operation = '';
+        operation = '=';
       }
       break;
     case '+/-':
@@ -53,6 +55,9 @@ export default function calculate(data, buttonName) {
     case '0':
       if (next) {
         next += buttonName;
+      } else if (operation === '=') {
+        total = buttonName;
+        operation = '';
       } else if (operation) {
         next = buttonName;
       } else if (total === '0') {

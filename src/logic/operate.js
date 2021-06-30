@@ -19,7 +19,11 @@ export default function operate(previous, next, operation) {
       value = prev.mod(nxt);
       break;
     case '/':
-      value = prev.div(nxt);
+      if (String(nxt) !== '0') {
+        value = prev.div(nxt);
+      } else {
+        value = '';
+      }
       break;
     case '=':
       value = prev;
