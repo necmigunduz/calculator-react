@@ -25,6 +25,7 @@ const App = () => {
   return (
     <>
       <div className="App">
+        <h1>React Calculator</h1>
         <Display result={total} next={next} operation={operation} />
         <ButtonPanel clickHandler={handleClick} />
       </div>
