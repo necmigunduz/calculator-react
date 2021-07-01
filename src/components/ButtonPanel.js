@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Button from './Button';
+import './styles.css';
 
 function ButtonPanel(props) {
   const handleClick = (buttonName) => props.clickHandler(buttonName);
@@ -24,13 +25,13 @@ function ButtonPanel(props) {
         <Button name="6" clickHandler={handleClick} />
         <Button name="-" clickHandler={handleClick} />
       </div>
-      <div className="butons">
+      <div className="buttons">
         <Button name="1" clickHandler={handleClick} />
         <Button name="2" clickHandler={handleClick} />
         <Button name="3" clickHandler={handleClick} />
         <Button name="+" clickHandler={handleClick} />
       </div>
-      <div className="buttons">
+      <div className="buttons bottom">
         <Button name="0" clickHandler={handleClick} />
         <Button name="." clickHandler={handleClick} />
         <Button name="=" clickHandler={handleClick} />
