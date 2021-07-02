@@ -1,13 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './styles.css';
 
-export default function Button(props) { // eslint-disable-next-line
-  const { name, clickHandler } = props; 
+export default function Button(props) {
+  const { // eslint-disable-next-line
+    name, color, wide, clickHandler,
+  } = props;
   const handleClick = (buttonName) => props.clickHandler(buttonName);
   return (
     <div className="button">
       <button
-        className="name"
+        className={`button ${color} ${wide}`}
         type="button"
         onClick={handleClick.bind(this, name)}
       >
@@ -19,9 +22,13 @@ export default function Button(props) { // eslint-disable-next-line
 
 Button.propTypes = {
   name: PropTypes.string,
+  color: PropTypes.string,
+  wide: PropTypes.string,
   clickHandler: PropTypes.func.isRequired,
 };
 
 Button.defaultProps = {
   name: '',
+  color: 'orange',
+  wide: '',
 };

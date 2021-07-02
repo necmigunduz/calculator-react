@@ -5,9 +5,7 @@ import './styles.css';
 export default function Display(props) {
   const { result, next, operation } = props;
   return (
-    <div className="display">
-      {`${result} ${operation} ${next}`}
-    </div>
+    <div className="display height-100">{`${result} ${operation} ${next}`}</div>
   );
 }
 

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
+import styled from 'styled-components';
 import Display from './Display';
 import ButtonPanel from './ButtonPanel'; // eslint-disable-next-line
 import calculate from '../logic/calculate';
-import './App.css';
 
 const App = () => {
   const [state, setState] = useState({
@@ -22,13 +22,18 @@ const App = () => {
   };
 
   const { total, next, operation } = state;
+  const S = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  `;
   return (
     <>
-      <div className="App">
+      <S>
         <h1>React Calculator</h1>
         <Display result={total} next={next} operation={operation} />
         <ButtonPanel clickHandler={handleClick} />
-      </div>
+      </S>
     </>
   );
 };
