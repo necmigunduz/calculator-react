@@ -19,6 +19,9 @@ To get a local copy up and running follow these simple example steps.
 - npm install - This will install all the packages in the package.json file
 - npm start - This will run the app locally in the local environment
 
+## Getting Started
+- For testing the app, use ```npm test``` 
+
 ## Author
 
 👤 **Necmi Gunduz**
