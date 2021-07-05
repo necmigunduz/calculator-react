@@ -1,9 +1,9 @@
-import React from "react";
-import renderer from "react-test-renderer";
-import Quote from "../components/Quote";
+import React from 'react';
+import renderer from 'react-test-renderer';
+import Quote from '../components/Quote';
 
-describe("Quote", () => {
-  it("renders correctly", () => {
+describe('Quote', () => {
+  it('renders correctly', () => {
     const tree = renderer.create(<Quote />).toJSON();
     expect(tree).toMatchSnapshot();
   });
