@@ -1,0 +1,246 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Calculator renders correctly 1`] = `
+<div
+  className="sc-bdnxRM fuhHWP"
+>
+  <div
+    className="display height-100"
+  >
+    0  
+  </div>
+  <div
+    className="panel"
+  >
+    <div
+      className="flex height-100"
+    >
+      <div
+        className="button"
+      >
+        <button
+          className="button orange "
+          onClick={[Function]}
+          type="button"
+        >
+          AC
+        </button>
+      </div>
+      <div
+        className="button"
+      >
+        <button
+          className="button orange "
+          onClick={[Function]}
+          type="button"
+        >
+          +/-
+        </button>
+      </div>
+      <div
+        className="button"
+      >
+        <button
+          className="button orange "
+          onClick={[Function]}
+          type="button"
+        >
+          %
+        </button>
+      </div>
+      <div
+        className="button"
+      >
+        <button
+          className="button orange "
+          onClick={[Function]}
+          type="button"
+        >
+          /
+        </button>
+      </div>
+    </div>
+    <div
+      className="flex height-100"
+    >
+      <div
+        className="button"
+      >
+        <button
+          className="button orange "
+          onClick={[Function]}
+          type="button"
+        >
+          7
+        </button>
+      </div>
+      <div
+        className="button"
+      >
+        <button
+          className="button orange "
+          onClick={[Function]}
+          type="button"
+        >
+          8
+        </button>
+      </div>
+      <div
+        className="button"
+      >
+        <button
+          className="button orange "
+          onClick={[Function]}
+          type="button"
+        >
+          9
+        </button>
+      </div>
+      <div
+        className="button"
+      >
+        <button
+          className="button orange "
+          onClick={[Function]}
+          type="button"
+        >
+          *
+        </button>
+      </div>
+    </div>
+    <div
+      className="flex height-100"
+    >
+      <div
+        className="button"
+      >
+        <button
+          className="button orange "
+          onClick={[Function]}
+          type="button"
+        >
+          4
+        </button>
+      </div>
+      <div
+        className="button"
+      >
+        <button
+          className="button orange "
+          onClick={[Function]}
+          type="button"
+        >
+          5
+        </button>
+      </div>
+      <div
+        className="button"
+      >
+        <button
+          className="button orange "
+          onClick={[Function]}
+          type="button"
+        >
+          6
+        </button>
+      </div>
+      <div
+        className="button"
+      >
+        <button
+          className="button orange "
+          onClick={[Function]}
+          type="button"
+        >
+          -
+        </button>
+      </div>
+    </div>
+    <div
+      className="flex height-100"
+    >
+      <div
+        className="button"
+      >
+        <button
+          className="button orange "
+          onClick={[Function]}
+          type="button"
+        >
+          1
+        </button>
+      </div>
+      <div
+        className="button"
+      >
+        <button
+          className="button orange "
+          onClick={[Function]}
+          type="button"
+        >
+          2
+        </button>
+      </div>
+      <div
+        className="button"
+      >
+        <button
+          className="button orange "
+          onClick={[Function]}
+          type="button"
+        >
+          3
+        </button>
+      </div>
+      <div
+        className="button"
+      >
+        <button
+          className="button orange "
+          onClick={[Function]}
+          type="button"
+        >
+          +
+        </button>
+      </div>
+    </div>
+    <div
+      className="flex height-100"
+    >
+      <div
+        className="button"
+      >
+        <button
+          className="button orange "
+          onClick={[Function]}
+          type="button"
+        >
+          0
+        </button>
+      </div>
+      <div
+        className="button"
+      >
+        <button
+          className="button orange "
+          onClick={[Function]}
+          type="button"
+        >
+          .
+        </button>
+      </div>
+      <div
+        className="button"
+      >
+        <button
+          className="button orange "
+          onClick={[Function]}
+          type="button"
+        >
+          =
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
