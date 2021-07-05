@@ -26,7 +26,7 @@ const App = () => {
   flex-direction: column;
   align-items: center;
   `;
-  
+
   const { total, next, operation } = state;
 
   return (
