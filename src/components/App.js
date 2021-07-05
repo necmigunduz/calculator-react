@@ -21,12 +21,14 @@ const App = () => {
     });
   };
 
-  const { total, next, operation } = state;
   const S = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   `;
+  
+  const { total, next, operation } = state;
+
   return (
     <>
       <S>
